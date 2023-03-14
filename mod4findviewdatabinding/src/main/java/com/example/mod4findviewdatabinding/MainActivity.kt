@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         val button = findViewById<Button>(R.id.button)
         textView.text = "HELLO WORLD 😊😊😊😂😂😂🤣🤣"
         button.setBackgroundColor(Color.GREEN)
+        //
         button.setOnClickListener {
             Snackbar.make(it,
                 "Hello vous avez push un bouton :D :D :D",
