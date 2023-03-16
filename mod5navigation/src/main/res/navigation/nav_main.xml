@@ -11,12 +11,16 @@
         android:label="fragment_button"
         tools:layout="@layout/fragment_button" >
         <action
-            android:id="@+id/action_buttonFragment_to_targetFragment"
+            android:id="@+id/actionButtonTarget"
             app:destination="@id/targetFragment" />
     </fragment>
     <fragment
         android:id="@+id/targetFragment"
         android:name="com.example.mod5navigation.TargetFragment"
         android:label="fragment_target"
-        tools:layout="@layout/fragment_target" />
+        tools:layout="@layout/fragment_target" >
+        <argument
+            android:name="singe"
+            app:argType="com.example.mod5navigation.Singe" />
+    </fragment>
 </navigation>

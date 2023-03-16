@@ -10,12 +10,16 @@
         android:name="com.example.cadox.ArticleViewFragment"
         android:label="ArticleViewFragment" >
         <action
-            android:id="@+id/action_articleViewFragment_to_articleEditFragment"
+            android:id="@+id/actionViewEdit"
             app:destination="@id/articleEditFragment" />
     </fragment>
     <fragment
         android:id="@+id/articleEditFragment"
         android:name="com.example.cadox.ArticleEditFragment"
         android:label="fragment_article_edit"
-        tools:layout="@layout/fragment_article_edit" />
+        tools:layout="@layout/fragment_article_edit" >
+        <argument
+            android:name="article"
+            app:argType="com.example.cadox.bo.Article" />
+    </fragment>
 </navigation>

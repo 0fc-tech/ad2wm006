@@ -23,7 +23,12 @@ class ButtonFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         //On récupère le button et lors du clic sur celui-ci on navigue vers TargetFragment
         view.findViewById<Button>(R.id.button).setOnClickListener {
-            findNavController().navigate(R.id.action_buttonFragment_to_targetFragment)
+            findNavController().navigate(
+                ButtonFragmentDirections.actionButtonTarget(
+                    Singe(
+                    "Mandrill","Joseph",12,"Orange",)
+                )
+            )
         }
     }
 }

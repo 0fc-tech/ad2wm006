@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.cadox.databinding.FragmentArticleViewBinding
 import com.example.cadox.repository.ArticleRepository
 import com.google.android.material.snackbar.Snackbar
@@ -38,6 +39,11 @@ class ArticleViewFragment : Fragment() {
                 Snackbar.make(it,
                     favb.article?.url ?: "",
                     1000).show()
+            }
+            favb.imageButtonEdit.setOnClickListener {
+                findNavController().navigate(
+                    ArticleViewFragmentDirections.actionViewEdit(favb.article!!)
+                )
             }
         }
     }
