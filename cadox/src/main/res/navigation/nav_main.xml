@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/articleViewFragment"
-        android:name="com.example.cadox.ArticleViewFragment"
+        android:name="com.example.cadox.view.fragment.ArticleViewFragment"
         android:label="ArticleViewFragment" >
         <action
             android:id="@+id/actionViewEdit"
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/articleEditFragment"
-        android:name="com.example.cadox.ArticleEditFragment"
+        android:name="com.example.cadox.view.fragment.ArticleEditFragment"
         android:label="fragment_article_edit"
         tools:layout="@layout/fragment_article_edit" >
         <argument

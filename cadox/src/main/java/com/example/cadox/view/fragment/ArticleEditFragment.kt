@@ -1,4 +1,4 @@
-package com.example.cadox
+package com.example.cadox.view.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,9 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.navArgs
+import com.example.cadox.ArticleEditFragmentArgs
 import com.example.cadox.databinding.FragmentArticleEditBinding
-import com.example.cadox.databinding.FragmentArticleViewBinding
-import com.example.cadox.repository.ArticleRepository
 
 
 class ArticleEditFragment : Fragment() {

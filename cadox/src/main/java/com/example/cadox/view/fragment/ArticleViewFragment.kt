@@ -1,4 +1,4 @@
-package com.example.cadox
+package com.example.cadox.view.fragment
 
 import android.content.Intent
 import android.net.Uri
@@ -11,8 +11,8 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.navigation.fragment.findNavController
 import com.example.cadox.databinding.FragmentArticleViewBinding
 import com.example.cadox.repository.ArticleRepository
-import com.google.android.material.snackbar.Snackbar
 import android.Manifest
+import com.example.cadox.ArticleViewFragmentDirections
 import java.util.*
 
 
