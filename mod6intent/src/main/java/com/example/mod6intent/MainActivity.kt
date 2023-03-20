@@ -20,8 +20,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         findViewById<Button>(R.id.button).setOnClickListener {
             //INTENT EXPLICITE
-            val intent = Intent(this,TargetActivity::class.java)
-            startActivity(intent)
+            Intent(this,TargetActivity::class.java).apply {
+                putExtra("prenom","Jean-Michel")
+                startActivity(this)
+            }
+
         }
         findViewById<Button>(R.id.buttonGeo).setOnClickListener {
             //INTENT IMPLICITE = VIEW GEO
