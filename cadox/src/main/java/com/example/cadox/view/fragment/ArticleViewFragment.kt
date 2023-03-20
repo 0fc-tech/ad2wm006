@@ -65,7 +65,7 @@ class ArticleViewFragment : Fragment() {
             }
             favb.imageButtonEdit.setOnClickListener {
                 findNavController().navigate(
-                    ArticleViewFragmentDirections.actionViewEdit(viewModel.article!!)
+                    ArticleViewFragmentDirections.actionViewEdit(viewModel  .article!!)
                 )
             }
         }
