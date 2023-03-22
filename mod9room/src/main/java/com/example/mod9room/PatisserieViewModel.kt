@@ -29,9 +29,10 @@ class PatisserieViewModel(val patisserieDao: PatisserieDao) : ViewModel() {
     companion object{
         val Factory : ViewModelProvider.Factory = object : ViewModelProvider.Factory {
             override fun <T : ViewModel> create(modelClass: Class<T>, extras: CreationExtras): T {
-                return PatisserieViewModel(PatisserieDB.getInstance(
-                    checkNotNull( extras[APPLICATION_KEY])
-                ).patisserieDao()) as T
+                return PatisserieViewModel(
+                    PatisserieDB.getInstance(checkNotNull( extras[APPLICATION_KEY]))
+                        .patisserieDao()
+                ) as T
             }
         }
     }
